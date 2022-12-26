@@ -1,0 +1,145 @@
+:root {
+	--black: #000000ff;
+	--bistre: #2B1E16;
+	--bole: #582f0e;
+	--cafe-au-lait: #5D4A44;
+	--misty-moss: #afa060ff;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+body{
+	background-color: var(--cafe-au-lait);
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	
+}
+
+h1{
+	color: var(--bistre);
+	font-weight: 800;
+	font-size: 7.5em;
+	text-align: center;
+}
+
+h2{
+	color: var(--misty-moss);
+	font-weight: bold;
+	font-size: 3em;
+	margin: 5px;
+}
+.whole_page{
+	height: 100%;
+}
+
+.grid_portada{
+	height: 100%;
+	display: grid;
+	
+	grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+	grid-template-rows: 25% 25% 25% 25%;
+	grid-template-areas:
+		"moda moda cine cine photo_dump photo_dump photo_dump sobre_mi"
+		"moda moda cine cine galerias galerias galerias sobre_mi"
+		"arte arte arte diseno_interiores diseno_interiores musica musica musica"
+		"arte arte arte diseno_interiores diseno_interiores magazines magazines magazines"
+	
+	
+}
+.grid_portada_element{
+	background-size: cover; /* <-- background size */
+  	background-position: center; /* <-- background position */
+	margin: 5px;
+	border-radius: 5px;
+	transition-duration: 0.4s;
+}
+
+.grid_portada_element:hover{
+	transform: scale(1.015);
+}
+
+
+.grid_portada_element .prueba{
+	position: absolute;
+	z-index: 100;
+	
+}
+
+.centered{
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: block;
+  	position: relative;
+
+}
+
+input.centered{
+	background-color: var(--bistre);
+	background-image: linear-gradient(to top, rgba(105, 105, 105, 0.1), transparent);
+	margin-top: 30px;
+	height: 100px;
+	width: 300px;
+	border-style: solid;
+	border-width: 5px;
+	border-color: var(--bistre);
+	border-radius: 5px;
+	color: var(--misty-moss);
+	font-weight: bold;
+	font-size: 3em;
+	transition-duration: 0.4s;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+
+input.centered:hover{
+	background-color: var(--misty-moss);
+	color: var(--bistre);
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	height: 110px;
+	width: 320px;
+}
