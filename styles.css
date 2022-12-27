@@ -4,6 +4,7 @@
 	--bole: #582f0e;
 	--cafe-au-lait: #5D4A44;
 	--misty-moss: #afa060ff;
+	--header-height: 120px;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -51,26 +52,28 @@ table {
 }
 
 
-
+html{
+	height: 100%;
+}
 
 body{
 	background-color: var(--cafe-au-lait);
 	font-family: 'Helvetica', 'Arial', sans-serif;
-	
+	height: 100%;
 }
 
 h1{
 	color: var(--bistre);
 	font-weight: 800;
 	font-size: 7.5em;
-	text-align: center;
+	
 }
 
 h2{
 	color: var(--misty-moss);
 	font-weight: bold;
 	font-size: 3em;
-	margin: 5px;
+	padding: 5px;
 }
 .whole_page{
 	height: 100%;
@@ -90,26 +93,42 @@ h2{
 	
 	
 }
+
 .grid_portada_element{
+	transition-duration: 0.4s;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), transparent);
+	border-radius: 5px;
+	
+}
+.grid_portada_element_wrapper{
+	position: static;
+	width: calc(100% - 10px);
+    height: calc(100% - 10px);
+	transition-duration: 0.4s;
 	background-size: cover; /* <-- background size */
   	background-position: center; /* <-- background position */
-	margin: 5px;
+	
 	border-radius: 5px;
-	transition-duration: 0.4s;
+	transition: height 2s, width 2s, left 3s, position 3s;
+
+	
 }
 
-.grid_portada_element:hover{
+.grid_portada_element_wrapper:hover{
 	transform: scale(1.015);
 }
 
 
-.grid_portada_element .prueba{
+.grid_portada_element .h2_wrapper{
 	position: absolute;
 	z-index: 100;
 	
 }
 
 .centered{
+	text-align: center;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -142,4 +161,98 @@ input.centered:hover{
 	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 	height: 110px;
 	width: 320px;
+}
+
+#menu_seleccionado{
+	display: none;
+	margin-top: 100px;
+}
+
+.arte#menu_seleccionado{
+	display: block;
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), transparent), url(imgs/arte.jpg);
+}
+.cine#menu_seleccionado{
+	display: block;
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), transparent), url(imgs/cine.webp);
+}
+.diseno_interiores#menu_seleccionado{
+	display: block;
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), transparent), url(imgs/diseno_interiores.jpeg);
+}
+.galerias#menu_seleccionado{
+	display: block;
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), transparent), url(imgs/galerias.jpg);
+}
+.magazines#menu_seleccionado{
+	display: block;
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), transparent), url(imgs/magazines.jpg);
+}
+.moda#menu_seleccionado{
+	display: block;
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), transparent), url(imgs/moda.webp);
+}
+.musica#menu_seleccionado{
+	display: block;
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), transparent), url(imgs/musica.jpg);
+}
+.photo_dump#menu_seleccionado{
+	display: block;
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), transparent), url(imgs/photo_dump.png);
+}
+.sobre_mi#menu_seleccionado{
+	display: block;
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), transparent), url(imgs/sobre_mi.jpeg);
+}
+
+.header{
+	background-color:var(--cafe-au-lait);
+	z-index: 1000;
+	position: fixed;
+	height: var(--header-height);
+	top: 0;
+	width: 100%;
+	outline: 3px #2B1E16 solid;
+	margin-bottom: 3px;
+}
+
+.menu_categorias{
+	position: fixed;
+	top: 123px;
+	margin-right:20px;
+	height: 500px;
+	
+}
+
+
+.flexbox_body{
+
+	display: flex;
+	flex-direction: row;
+	top: 123px;
+
+}
+
+.flexbox_items{
+	width: calc(100% - 300px);
+	top: 123px;
+	position: relative;
+	left: 300px;
+	outline: 3px #2B1E16 solid;
+	display: flex;
+	flex-wrap:wrap;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.item{
+	margin:20px;
+	outline: 3px #2B1E16 solid;
+	height: 300px;
+	width: 300px;
+	align-items: flex-start;
+	text-align: left;
+
 }
