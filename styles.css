@@ -168,47 +168,10 @@ input.centered:hover{
 	margin-top: 100px;
 }
 
-.arte#menu_seleccionado{
-	display: block;
-	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), transparent), url(imgs/arte.jpg);
-}
-.cine#menu_seleccionado{
-	display: block;
-	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), transparent), url(imgs/cine.webp);
-}
-.diseno_interiores#menu_seleccionado{
-	display: block;
-	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), transparent), url(imgs/diseno_interiores.jpeg);
-}
-.galerias#menu_seleccionado{
-	display: block;
-	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), transparent), url(imgs/galerias.jpg);
-}
-.magazines#menu_seleccionado{
-	display: block;
-	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), transparent), url(imgs/magazines.jpg);
-}
-.moda#menu_seleccionado{
-	display: block;
-	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), transparent), url(imgs/moda.webp);
-}
-.musica#menu_seleccionado{
-	display: block;
-	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), transparent), url(imgs/musica.jpg);
-}
-.photo_dump#menu_seleccionado{
-	display: block;
-	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), transparent), url(imgs/photo_dump.png);
-}
-.sobre_mi#menu_seleccionado{
-	display: block;
-	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), transparent), url(imgs/sobre_mi.jpeg);
-}
-
 .header{
 	background-color:var(--cafe-au-lait);
 	z-index: 1000;
-	position: fixed;
+	position: sticky;
 	height: var(--header-height);
 	top: 0;
 	width: 100%;
@@ -217,7 +180,7 @@ input.centered:hover{
 }
 
 .menu_categorias{
-	position: fixed;
+	position: sticky;
 	top: 123px;
 	margin-right:20px;
 	height: 500px;
