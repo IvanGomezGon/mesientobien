@@ -254,6 +254,7 @@ li:hover{
 
 
 .house{
+	position: relative;
 	width: calc(100% - 60px);
 	height: calc(100% - 183px);
 	border: 30px #2b1e16b0 solid;
@@ -261,7 +262,6 @@ li:hover{
 }
 
 #chair img{
-	bottom:30px;
 	left: 3%;
 	transform-origin: bottom left;
 }
@@ -269,26 +269,22 @@ li:hover{
 
 
 #table img{
-	bottom:30px;
 	left: 20%;
 	transform-origin: bottom center;
 }
 
 #accesory img{
-	bottom:30px;
 	right: 100px;
 	transform-origin: bottom center;
 }
 
 #lamp img{
-	top:153px;
 	right: 45%;
 	transform-origin: top center;
 }
 
 #storage img{
 	width: 500px;
-	bottom:30px;
 	right: 30%;
 	transform-origin: bottom center;
 }
