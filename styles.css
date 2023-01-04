@@ -274,19 +274,20 @@ li:hover{
 }
 
 #accesory img{
-	right: 5%;
+	right: 5px;
 	transform-origin: bottom center;
 }
 
 #lamp img{
-	right: 45%;
+	right: calc(50% - 200px);
+	
 	top:0px;
 	transform-origin: top center;
 }
 
 #storage img{
 	width: 500px;
-	right: 30%;
+	right: 25%;
 	transform-origin: bottom center;
 }
 .house img{
@@ -303,5 +304,9 @@ li:hover{
 }
 
 .house h2{
-	display:none;
+	font-size: 5em;
+	opacity: 0;
+	transition: opacity 0.5s;
+	position:absolute;
 } 
+

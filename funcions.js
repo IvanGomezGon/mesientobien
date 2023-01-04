@@ -25,10 +25,16 @@ async function showhide(id){
 
 }
 
-$(document).ready(function(){
-    $(".house img").mouseover(function(){
-        console.log("que");
-        $("h2").css("display:block;");
-    });
-});
+async function showTextDesign(id){
+    const texts = document.querySelectorAll('.house h2');
+    texts.forEach(text => {
+        text.style.opacity = 0;
+      });
+
+
+    if (document.getElementById) {
+        document.getElementById(id).style.opacity = 1;        
+    } 
+    return false;
+}
  
