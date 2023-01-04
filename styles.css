@@ -274,12 +274,13 @@ li:hover{
 }
 
 #accesory img{
-	right: 100px;
+	right: 5%;
 	transform-origin: bottom center;
 }
 
 #lamp img{
 	right: 45%;
+	top:0px;
 	transform-origin: top center;
 }
 
@@ -292,6 +293,7 @@ li:hover{
 	position:absolute;
 	width: 400px;
 	height: 400px;
+	bottom: 0px;
 	transition-duration: 0.4s;
 	filter: invert(7%) sepia(9%) saturate(3566%) hue-rotate(339deg) brightness(95%) contrast(87%);
 	
