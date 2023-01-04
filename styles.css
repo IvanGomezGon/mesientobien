@@ -215,7 +215,7 @@ input.centered:hover{
 	outline: 3px #2B1E16 solid;
 	align-items: flex-start;
 	text-align: left;
-	width: 300px;
+	width: 450px;
     height: 300px;
 	transition-duration: 0.4s;
 	background-size: cover; /* <-- background size */
@@ -249,3 +249,61 @@ li:hover{
 	background-color: #582f0e;
 	transition: 0.5s;
 }
+
+
+
+
+.house{
+	width: calc(100% - 60px);
+	height: calc(100% - 183px);
+	border: 30px #2b1e16b0 solid;
+
+}
+
+#chair img{
+	bottom:30px;
+	left: 3%;
+	transform-origin: bottom left;
+}
+
+
+
+#table img{
+	bottom:30px;
+	left: 20%;
+	transform-origin: bottom center;
+}
+
+#accesory img{
+	bottom:30px;
+	right: 100px;
+	transform-origin: bottom center;
+}
+
+#lamp img{
+	top:153px;
+	right: 45%;
+	transform-origin: top center;
+}
+
+#storage img{
+	width: 500px;
+	bottom:30px;
+	right: 30%;
+	transform-origin: bottom center;
+}
+.house img{
+	position:absolute;
+	width: 400px;
+	height: 400px;
+	transition-duration: 0.4s;
+	filter: invert(7%) sepia(9%) saturate(3566%) hue-rotate(339deg) brightness(95%) contrast(87%);
+	
+}
+.house img:hover{
+	transform: scale(1.1);
+}
+
+.house h2{
+	display:none;
+} 

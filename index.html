@@ -4,6 +4,16 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
   <title> mesientobien</title> 
+  <link
+  href="favicon-light.png"
+  rel="icon"
+  media="(prefers-color-scheme: light)"
+/>
+<link
+  href="favicon-dark.png"
+  rel="icon"
+  media="(prefers-color-scheme: dark)"
+/>
   <link rel="stylesheet" type="text/css" href="styles.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="funcions.js " defer></script>
@@ -28,7 +38,7 @@
         </div>
       </div>
       
-      <div class="grid_portada_element_wrapper" style="grid-area: cine; background-image: url(imgs/cine.webp)" id="cine" onclick="showhide('cine');">
+      <div class="grid_portada_element_wrapper" style="grid-area: cine; background-image: url(imgs/cine.webp)" id="cine" onclick="showCine('cine');">
         <div class="grid_portada_element">
           <div class="h2_wrapper"><h2>CINE</h2></div>
         </div>
@@ -60,7 +70,7 @@
         </div>
       </div>
       
-      <div class="grid_portada_element_wrapper" style="grid-area: diseno_interiores; background-image: url(imgs/diseno_interiores.jpeg)" id="diseno_interiores" onclick="showhide('diseno_interiores');">
+      <div class="grid_portada_element_wrapper" style="grid-area: diseno_interiores; background-image: url(imgs/diseno_interiores.jpeg)" id="diseno_interiores" onclick="showInterior('diseno_interiores');">
         <div class="grid_portada_element">
           <h2>DISEÑO DE INTERIORES</h2>
         </div>
