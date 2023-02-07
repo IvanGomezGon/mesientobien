@@ -3,7 +3,8 @@
 	--bistre: #2B1E16;
 	--bole: #582f0e;
 	--cafe-au-lait: #5D4A44;
-	--misty-moss: #afa060ff;
+	--misty-moss: #ffce00;
+	--misty-moss2: #afa060ff;
 	--header-height: 120px;
 }
 
@@ -199,8 +200,13 @@ input.centered:hover{
 	top: 123px;
 }
 
+.height100{
+	height: 100%;
+}
+
 .flexbox_items{
 	width: calc(100% - 300px);
+	height: 100%;
 	position: relative;
 	outline: 3px #2B1E16 solid;
 	display: flex;
@@ -210,26 +216,55 @@ input.centered:hover{
 	justify-content: center;
 }
 
-.item_wrapper{
-	margin:20px;
-	outline: 3px #2B1E16 solid;
-	align-items: flex-start;
+.cine_item_wrapper{
 	text-align: left;
+	margin:20px;
 	width: 450px;
     height: 300px;
+}
+
+.diseno_interiores_wrapper{
+	justify-content: center;
+
+	margin:7px;
+	flex: 1;
+	display:flex;
+	
+}
+
+.diseno_interiores_wrapper h2{
+	z-index: 100;
+	position: absolute;
+	top: 50%;
+
+}
+.item_wrapper{
+	
+	outline: 3px #2B1E16 solid;
+	align-items: flex-start;
+	
 	transition-duration: 0.4s;
-	background-size: cover; /* <-- background size */
-  	background-position: center; /* <-- background position */
+	background-size: cover; 
+  	background-position: center; 
 	border-radius: 5px;
+	
 }
 .item{
+	
 	transition-duration: 0.4s;
 	width: 100%;
 	height: 100%;
-	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), transparent);
-	border-radius: 5px;
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.419), transparent);
+	
 }
-
+.diseno_interiores_wrapper:hover .item{
+	position: relative;
+	transform: scale(0.90, 0.1);
+}
+.cine_item_wrapper:hover .item{
+	height: 60px;
+	
+}
 .item_wrapper:hover{
 	transform: scale(1.015);
 }
