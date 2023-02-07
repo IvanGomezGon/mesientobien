@@ -238,6 +238,13 @@ input.centered:hover{
 	top: 50%;
 
 }
+
+.furniture_item_wrapper{
+	width: 300px;
+    height: 300px;
+	margin: 5px;
+
+}
 .item_wrapper{
 	
 	outline: 3px #2B1E16 solid;

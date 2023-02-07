@@ -1,10 +1,10 @@
 
-async function showhide(linkpage){
+async function showhide(linkpage, id){
     if (document.getElementById) {
-        await $( "#menu_seleccionado" ).load(linkpage);
-        document.getElementById("menu_seleccionado").style.display = "block";
-        document.getElementById("menu_seleccionado").style.height = "100%";
-        document.getElementById("menu_seleccionado").scrollIntoView({behavior:'smooth'});          
+        await $( "#" + id ).load(linkpage);
+        document.getElementById(id).style.display = "block";
+        document.getElementById(id).style.height = "100%";
+        document.getElementById(id).scrollIntoView({behavior:'smooth'});          
     } 
     return false;
 
