@@ -234,16 +234,13 @@ input.centered:hover{
 
 .diseno_interiores_wrapper h2{
 	z-index: 100;
-	position: relative;
-	top: 50%;
-
+	position: absolute;
+	bottom: 48vh;
+	opacity: 0;
 }
-
-.furniture_item_wrapper{
-	width: 300px;
-    height: 300px;
-	margin: 5px;
-
+.diseno_interiores_wrapper:hover h2{
+	opacity: 1;
+	transition: 0.3s;
 }
 .item_wrapper{
 	
