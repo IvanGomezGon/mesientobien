@@ -76,6 +76,13 @@ h2{
 	font-size: 3em;
 	padding: 5px;
 }
+
+h3{
+	color: var(--misty-moss);
+	font-weight: bold;
+	font-size: 1em;
+	padding: 5px;
+}
 .whole_page{
 	height: 100%;
 }
@@ -232,6 +239,11 @@ input.centered:hover{
 	
 }
 
+.furniture_item_wrapper {
+	margin: 7px;
+	width: 300px;
+	height: 300px;
+}
 .diseno_interiores_wrapper h2{
 	z-index: 100;
 	position: absolute;
@@ -348,4 +360,82 @@ li:hover{
 	transition: opacity 0.5s;
 	position:absolute;
 } 
+.libreria{
+	display: flex;
+	z-index: 10000;
+	height: calc(100% - 100px);
+	border: 50px #2b1e16b0 solid;
+}
+.magazine{
+	z-index: 3;
+	position:relative;
+	width:150px;
+	height:100%;
+	transition-duration: 0.5s;
+  }
 
+  .magazine:hover{
+	z-index: 10;
+	transform: scale(1.115);
+  }
+
+.text_magazine{
+	position:absolute;
+	width: 1000px;
+	bottom: 00px;
+	left: 60px;
+	color: black;
+	font-family: 'Trebuchet MS', sans-serif;
+	transform-origin: bottom left;
+
+}
+.logo_moco{
+	z-index: 4;
+	width: 110px;
+	position:absolute;
+	top: 83px;
+	left: 45px;
+	filter: brightness(0) saturate(100%);
+	transform-origin: bottom left;
+}
+
+.logo_apartamento{
+	transform-origin: center center;
+	position:absolute;	
+	height: 50px;
+	bottom: calc(50% - 25px);
+	left: -80px;
+	filter: brightness(0) saturate(100%);
+}
+
+.last_mag{
+	margin-left: 150px;
+	margin-right: 150px;
+	/* Safari */
+	-webkit-transform: rotate(339deg);
+	/* Firefox */
+	-moz-transform: rotate(339deg);
+	/* IE */
+	-ms-transform: rotate(339deg);
+	/* Opera */
+	-o-transform: rotate(339deg);
+
+}
+
+.last_mag_container:hover .last_mag{
+	transform: translateX(-150px) scale(1.115);
+	
+  }
+.sideways{
+
+
+	/* Safari */
+	-webkit-transform: rotate(-90deg);
+	/* Firefox */
+	-moz-transform: rotate(-90deg);
+	/* IE */
+	-ms-transform: rotate(-90deg);
+	/* Opera */
+	-o-transform: rotate(-90deg);
+
+}
