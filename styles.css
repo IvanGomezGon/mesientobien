@@ -171,7 +171,7 @@ input.centered:hover{
 	width: 320px;
 }
 
-#menu_seleccionado{
+#selected_menu{
 	display: none;
 	margin-top: 100px;
 }
@@ -187,14 +187,14 @@ input.centered:hover{
 	margin-bottom: 3px;
 }
 
-.menu_categorias_wrapper{
+.categories_menu_wrapper{
 	top: 123px;
 	
 	margin-left:15px;
 	border-left: 3px #2B1E16 solid;
 }
 
-.menu_categorias{
+.categories_menu{
 	position: sticky;
 	top: 123px;
 	width: 100%;
@@ -222,21 +222,7 @@ input.centered:hover{
 	align-items: center;
 	justify-content: center;
 }
-
-.cine_item_wrapper{
-	text-align: left;
-	margin:20px;
-	width: 450px;
-    height: 300px;
-}
-
-.furniture_item_wrapper{
-	margin:7px;
-	width: 300px;
-    	height: 300px;
-}
-
-.diseno_interiores_wrapper{
+.interior_design_wrapper{
 	justify-content: center;
 
 	margin:7px;
@@ -245,18 +231,18 @@ input.centered:hover{
 	
 }
 
-.furniture_item_wrapper {
+.item_list_wrapper {
 	margin: 7px;
 	width: 300px;
 	height: 300px;
 }
-.diseno_interiores_wrapper h2{
+.interior_design_wrapper h2{
 	z-index: 100;
 	position: absolute;
 	bottom: 48vh;
 	opacity: 0;
 }
-.diseno_interiores_wrapper:hover h2{
+.interior_design_wrapper:hover h2{
 	opacity: 1;
 	transition: 0.3s;
 }
@@ -279,13 +265,13 @@ input.centered:hover{
 	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.419), transparent);
 	
 }
-.diseno_interiores_wrapper:hover .item{
+.interior_design_wrapper:hover .item{
 	position: relative;
 	transform: scale(0.90, 0.1);
 }
-.cine_item_wrapper:hover .item{
+
+.item_list_wrapper:hover .item{
 	height: 60px;
-	
 }
 .item_wrapper:hover{
 	transform: scale(1.015);
@@ -366,7 +352,7 @@ li:hover{
 	transition: opacity 0.5s;
 	position:absolute;
 } 
-.libreria{
+.library{
 	display: flex;
 	z-index: 10000;
 	height: calc(100% - 100px);
@@ -444,4 +430,55 @@ li:hover{
 	/* Opera */
 	-o-transform: rotate(-90deg);
 
+}
+
+.song, .pulse1, .pulse2{
+	position:relative;
+	height: 100px;
+	width: 100px;	
+	border-radius: 900px;
+}
+.song{
+	margin: 20px;
+	z-index: 100;
+	transition-duration: 0.5s;
+	background-color: var(--bistre);
+}
+
+.pulse1, .pulse2{
+	z-index: -1;
+	background-color: white;
+}
+.song_name{
+	pointer-events: none;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+}
+
+.song:hover{
+	z-index: 1;
+	transform: scale(1.1);
+}
+.pulse1:hover{
+	z-index: -1;
+	animation: pulse 1s ease-out infinite;
+}
+
+.pulse1:hover .pulse2{
+	z-index: -1;
+	animation: pulse 2s 1s ease-out infinite;
+	
+}
+
+
+@keyframes pulse{
+	100%{
+		z-index: -1;
+		transform:scale(1.3);
+		opacity:0;
+	}
 }
